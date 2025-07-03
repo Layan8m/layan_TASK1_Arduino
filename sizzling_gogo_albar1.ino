@@ -1,0 +1,26 @@
+// Define pin numbers for the LEDs
+const int led1 = 11;
+const int led2 = 12;
+const int led3 = 13;
+
+void setup() {
+  // Initialize the LED pins as outputs
+  pinMode(led1, OUTPUT);
+  pinMode(led2, OUTPUT);
+  pinMode(led3, OUTPUT);
+}
+
+void loop() {
+  // Turn on the LEDs one by one
+  digitalWrite(led1, HIGH);
+  delay(1000); // Wait for 1 second
+  digitalWrite(led1, LOW);
+  
+  digitalWrite(led2, HIGH);
+  delay(1000); // Wait for 1 second
+  digitalWrite(led2, LOW);
+  
+  digitalWrite(led3, HIGH);
+  delay(1000); // Wait for 1 second
+  digitalWrite(led3, LOW);
+}
